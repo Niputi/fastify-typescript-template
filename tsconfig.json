@@ -2,16 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "lib": ["ESNext"],
-    "paths": {
-      "*": ["src/*"]
-    },
+    "types": ["point-of-view", "fastify-static"],
     "allowJs": true,
     "target": "ESNext",
     "module": "commonjs",
     "moduleResolution": "node",
+    "incremental": true,
     "sourceMap": true,
     "outDir": "./dist"
   },
-  "include": ["./src/**/*.ts"],
+  "include": ["./src/**/*.ts", "@types/**.d.ts", "src/routes/index.ts"],
   "exclude": ["node_modules"]
 }

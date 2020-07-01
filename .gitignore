@@ -163,3 +163,4 @@ typings/
 dist
 
 logs/log.log
+prisma/migrations
